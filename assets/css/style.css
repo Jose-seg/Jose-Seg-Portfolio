@@ -57,11 +57,14 @@ body {
     margin-left: 25px;
     margin-top: 24px;
     text-shadow: 5px 5px 5px black;
+    text-align: justify;
+    font-size: 1;
 }
 
 a {
     color: whitesmoke;
     text-decoration: wavy;
+    flex-wrap: wrap;
 }
 
 p {
@@ -78,6 +81,12 @@ p {
     background-position: 100%;
     box-shadow: 10px 10px 10px black;
 } 
+
+img {
+    width: 100%;
+    height: auto;
+}
+
 
 .float-left {
     float: left;
@@ -106,13 +115,18 @@ p {
 }
 
 .my-work {
+    display: flex;
     margin-bottom: 20px;
-    padding: 50px;
+    padding: 20px;
     height: 300px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #92A8D1;
     color: white;
     box-shadow: 10px 10px 5px black;
+}
+
+.my-work h3 {
+    font-size: 15px;
 }
 
 .contact-me {
@@ -125,22 +139,85 @@ p {
     box-shadow: 10px 10px 5px black;
 }
 
+.contact-me a {
+    display: block;
+    font-size: 30px;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
+
 .about-me img {
+    width: 20%;
+   height: auto;
     max-height: 200px;
 }
+
+.my-work img {
+    max-height: 300%;
+    float: left;
+   
+}
+
+.image1 {
+    max-width: 65%;
+    max-height: 50%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px black solid;
+    display: inline-flex;
+}
+
+
+.image2 {
+    max-width: 50%;
+    max-height: 50%;
+    margin-bottom: 20px;
+    height: auto;
+    position: relative;
+    top: 5px;
+    left: 0;
+    border: 1px black solid;
+    display: block;
+}
+
 
 .about-me h2 {
     margin-bottom: 20px;
     font-size: 30px;
+    color: black;
 }
 
 .my-work h2 {
     margin-bottom: 20px;
     font-size: 30px;
+    color: black;
 }
 
 .contact-me h2 {
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 36px;
+    color: black;
 }
 
+@media only screen and (max-width: 992px) {
+    .header {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        width: 75%;
+        height: 75%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .header {
+        width: 50%;
+        height: 50%;
+    }
+}
