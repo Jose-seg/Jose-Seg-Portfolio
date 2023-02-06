@@ -15,5 +15,5 @@ N/A
 ## Screenshot
 
 ## Deployment
-* github Repo:
-* Deployed site:
+* github Repo: https://github.com/Jose-seg/Jose-Seg-Portfolio
+* Deployed site: https://jose-seg.github.io/Jose-Seg-Portfolio/
