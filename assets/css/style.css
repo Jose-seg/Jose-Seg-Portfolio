@@ -18,7 +18,7 @@ body {
     text-align: center;
 }
 
-.avatar {
+/* .avatar {
     vertical-align: middle;
     width: 140px;
     height: 140px;
@@ -27,7 +27,7 @@ body {
     margin-left: 24px;
     margin-top: 24px;
     box-shadow: 1px 1px 1px 6px black;
-}
+} */
 
 .header h1 {
     display: inline-block;
@@ -64,7 +64,6 @@ body {
 a {
     color: whitesmoke;
     text-decoration: wavy;
-    flex-wrap: wrap;
 }
 
 p {
@@ -110,14 +109,14 @@ img {
     height: 300px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #92A8D1;
-    color: white;
+    color: black;
     box-shadow: 10px 10px 5px black;
 }
 
 .my-work {
     display: flex;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 0;
     height: 300px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #92A8D1;
@@ -147,7 +146,8 @@ img {
 }
 
 .about-me img {
-    width: 20%;
+    width: 10%;
+    height: 10%;
    height: auto;
     max-height: 200px;
 }
@@ -201,23 +201,144 @@ img {
     color: black;
 }
 
-/* @media only screen and (max-width: 992px) {
-    .header {
+ @media only screen and (min-width: 1200px) {
+    .header h1 {
+       font-size: 68px;
+       overflow: wrap;
+    }
+    .header nav {
+        font-size: 30px;
+    }
+    .header nav ul {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+    }
+    .header nav ul li {
+        overflow: wrap;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header h1 {
+        font-size: 56px;
+        overflow: wrap;
+    }
+    .header nav {
+        font-size: 25px;
+        overflow: hidden;
+        position: absolute;
+        top: 1;
+        right: 0;
         width: 100%;
-        height: 100%;
     }
+    .header nav ul {
+        display:inline-flex;
+        flex-direction: row;
+    }
+    .header nav ul li {
+        overflow: nowrap;
+        text-align: right;
+    }
+    .tops{
+        overflow: wrap;
+    }
+    .about-me {
+        overflow: nowrap;
+    }
+    .about-me h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .about-me img {
+       overflow: nowrap;
+    }
+    .my-work{
+        overflow: nowrap;
+    }
+    h2 {
+       overflow: nowrap;
+        font-size: 20px;
+    }
+    h3 {
+        overflow:nowrap;
+    }
+    .image1,
+    .image2 {
+        overflow: wrap;
+         width: 75%;
+        height: 25%;
+       
+     }
+     .contact-me h2{
+        font-size: 30px;
+        text-align: center;
+     }
+     .contact-me a {
+        font-size: 25px;
+        overflow: nowrap;
+     }
 }
 
-@media only screen and (max-width: 768px) {
-    .header {
-        width: 75%;
-        height: 75%;
+@media only screen and (max-width: 600px) {
+    .header h1 {
+       font-size: 44px;
+       overflow: wrap;
     }
-}
-
-@media only screen and (max-width: 576px) {
-    .header {
-        width: 50%;
-        height: 50%;
+    .header nav {
+        font-size: 10px;
+        overflow: hidden;
+        position: absolute;
+        top: 1;
+        right: 0;
+        width: 100%;
     }
-} */
+    .header nav ul {
+        display: inline-flex;
+        flex-direction: row;
+    }
+    .header nav ul li {
+        overflow: nowrap;
+    }
+    .tops{
+        overflow: wrap;
+    }
+    .about-me {
+        overflow: nowrap;
+    }
+    .about-me h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .about-me img {
+        overflow: nowrap;
+    }
+    .my-work {
+        overflow: nowrap;
+    }
+    .my-work h2 {
+        font-size: 20px;
+        text-align: bottom;
+    }
+    h2 {
+        overflow: nowrap;
+        font-size: 10px;
+     }
+    h3 {
+        overflow:nowrap;
+    }
+    .image1,
+    .image2 {
+        overflow: wrap;
+        width: 60%;
+        height: 20%;
+    }
+    .contact-me h2{
+        font-size: 20px;
+        text-align: center;
+     }
+     .contact-me a {
+        font-size: 20px;
+        overflow: nowrap;
+     }
+} 
