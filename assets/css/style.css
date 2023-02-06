@@ -75,7 +75,7 @@ p {
     width: 100%;
     margin-bottom: 36px;
     padding: 0;
-    background-image: url(/images/look-view.jpg);
+    background-image: url(./images/look-view.jpg);
     background-size: cover;
     background-position: 100%;
     box-shadow: 10px 10px 10px black;
@@ -159,8 +159,8 @@ img {
 }
 
 .image1 {
-    max-width: 65%;
-    max-height: 50%;
+    width: 90%;
+    max-height: 60%;
     height: auto;
     position: relative;
     top: 0;
