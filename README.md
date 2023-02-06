@@ -12,3 +12,10 @@ The purpose of this site is to store my previous and future work during the cour
 ## Credits
 N/A
 
+## Screenshot
+image.png
+image.png
+
+## Deployment
+* github Repo:
+* Deployed site:
