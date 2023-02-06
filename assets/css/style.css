@@ -75,7 +75,7 @@ p {
     width: 100%;
     margin-bottom: 36px;
     padding: 0;
-    background-image: url(./images/look-view.jpg);
+    /* background-image: url('../images/look-view.jpg'); */
     background-size: cover;
     background-position: 100%;
     box-shadow: 10px 10px 10px black;
