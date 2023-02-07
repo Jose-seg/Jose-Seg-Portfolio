@@ -11,13 +11,15 @@ body {
 
 
 .header {
+    display: flex;
+    width: 2050px;
     padding: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: cornflowerblue;
     color: white;
     text-align: center;
 }
-
+/*will intend on adding avatar picture within header*/
 /* .avatar {
     vertical-align: middle;
     width: 140px;
@@ -39,7 +41,7 @@ body {
     color: white;
     text-shadow: 4px 4px 8px black;
 }
-
+/*added nav to header*/
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -52,13 +54,13 @@ body {
     list-style-type: none;
 }
 
-.header nav ul li {
+.header > nav ul li {
     display: inline-block;
     margin-left: 25px;
     margin-top: 24px;
     text-shadow: 5px 5px 5px black;
-    text-align: justify;
     font-size: 1;
+    flex-wrap: nowrap;
 }
 
 a {
@@ -71,21 +73,22 @@ p {
 }
 
  .tops { 
+    display: flex;
     height: 400px;
-    width: 100%;
+    width: 2050px;
     margin-bottom: 36px;
     padding: 0;
-    /* background-image: url('../images/look-view.jpg'); */
+    background-color: aquamarine; 
     background-size: cover;
     background-position: 100%;
-    box-shadow: 10px 10px 10px black;
 } 
-
-img {
-    width: 100%;
-    height: auto;
+/*Displays image under the header*/
+.tops > img {
+    width: 2050px;
+    height: 400px;
+    object-fit: cover;
+    justify-content: center;
 }
-
 
 .float-left {
     float: left;
@@ -104,6 +107,8 @@ img {
 }
 
 .about-me {
+    display: flex;
+    width: 1500px;
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -113,8 +118,14 @@ img {
     box-shadow: 10px 10px 5px black;
 }
 
+.about-me > p {
+     text-align: center;
+     flex-wrap: nowrap;
+}
+
 .my-work {
     display: flex;
+    width: 1500px;
     margin-bottom: 20px;
     padding: 0;
     height: 300px;
@@ -129,6 +140,7 @@ img {
 }
 
 .contact-me {
+    display: flex;
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -137,8 +149,8 @@ img {
     color: white;
     box-shadow: 10px 10px 5px black;
 }
-
-.contact-me a {
+/*Links to github as well as email*/
+.contact-me, a {
     display: block;
     font-size: 30px;
     color: black;
@@ -152,27 +164,28 @@ img {
     max-height: 200px;
 }
 
-.my-work img {
+/* .my-work img {
     max-height: 300%;
     float: left;
    
-}
+} */
 
-.image1 {
-    width: 90%;
-    max-height: 60%;
-    height: auto;
-    position: relative;
-    top: 0;
-    left: 0;
-    border: 1px black solid;
-    display: inline-flex;
-}
+.my-work img {
+        max-width: 90%;
+        max-height: 40%;
+        margin-bottom: 20px;
+        height: auto;
+        position: relative;
+        top: 5px;
+        left: 0;
+        border: 1px black solid;
+        display: block;
+} 
 
 
-.image2 {
-    max-width: 50%;
-    max-height: 50%;
+.my-work .image2 {
+    max-width: 60%;
+    max-height: 40%;
     margin-bottom: 20px;
     height: auto;
     position: relative;
@@ -200,45 +213,49 @@ img {
     font-size: 36px;
     color: black;
 }
-
+/*Adjusted screen size for laptop users*/
  @media only screen and (min-width: 1200px) {
     .header h1 {
        font-size: 68px;
        overflow: wrap;
+       text-align: right;
     }
     .header nav {
         font-size: 30px;
     }
     .header nav ul {
-        display: flex;
-        flex-direction: row;
-        align-content: flex-start;
+        float: center;
     }
     .header nav ul li {
-        overflow: wrap;
+        float: none;
+        display: block;
+        text-align: left;
     }
 }
-
+/*Adjusted screen size for tablet users*/
 @media only screen and (min-width: 768px) {
     .header h1 {
         font-size: 56px;
         overflow: wrap;
+
     }
     .header nav {
         font-size: 25px;
         overflow: hidden;
-        position: absolute;
         top: 1;
         right: 0;
         width: 100%;
     }
     .header nav ul {
-        display:inline-flex;
-        flex-direction: row;
+         display: block;
+        position: relative;
+        float: right; 
     }
     .header nav ul li {
-        overflow: nowrap;
-        text-align: right;
+
+        float: right;
+        text-align: center;
+    
     }
     .tops{
         overflow: wrap;
@@ -279,7 +296,7 @@ img {
         overflow: nowrap;
      }
 }
-
+/*Adjusted screen size for smartphone users*/
 @media only screen and (max-width: 600px) {
     .header h1 {
        font-size: 44px;
@@ -288,7 +305,6 @@ img {
     .header nav {
         font-size: 10px;
         overflow: hidden;
-        position: absolute;
         top: 1;
         right: 0;
         width: 100%;
