@@ -140,7 +140,7 @@ p {
 }
 
 .contact-me {
-    display: flex;
+    display: inline-flex;
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -170,7 +170,7 @@ p {
    
 } */
 
-.my-work img {
+/* .my-work img {
         max-width: 60%;
         max-height: 40%;
         margin-bottom: 20px;
@@ -180,11 +180,11 @@ p {
         left: 0;
         border: 1px black solid;
         display: block;
-} 
+}  */
 
 
-.my-work .image2 {
-    max-width: 60%;
+.my-work .image1 {
+    max-width: 80%;
     max-height: 40%;
     margin-bottom: 20px;
     height: auto;
