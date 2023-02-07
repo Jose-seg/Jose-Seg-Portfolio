@@ -12,7 +12,7 @@ body {
 
 .header {
     display: flex;
-    width: 2050px;
+    width: 1535px;
     padding: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: cornflowerblue;
@@ -43,21 +43,25 @@ body {
 }
 /*added nav to header*/
 .header nav {
-    padding-top: 15px;
-    margin-right: 20px;
+    /* padding-top: 15px;
+    margin-right: 20px; */
     float: right;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
+    font-size: 40px; 
+    background-color: cornflowerblue;
 }
 
 .header nav ul {
     list-style-type: none;
+    width: 300px;
 }
 
-.header > nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-    margin-top: 24px;
+ nav ul li {
+    width: 400px;
+    display: flex;
+    padding:  0;
+    /* padding-left: 0; */
+    margin: 0;
     text-shadow: 5px 5px 5px black;
     font-size: 1;
     flex-wrap: nowrap;
@@ -65,7 +69,7 @@ body {
 
 a {
     color: whitesmoke;
-    text-decoration: wavy;
+    /* text-decoration: wavy; */
 }
 
 p {
@@ -75,7 +79,7 @@ p {
  .tops { 
     display: flex;
     height: 400px;
-    width: 2050px;
+    width: 1535px;
     margin-bottom: 36px;
     padding: 0;
     background-color: aquamarine; 
@@ -124,7 +128,8 @@ p {
 }
 
 .my-work {
-    display: flex;
+    display: block;
+    flex-direction: row;
     width: 1500px;
     margin-bottom: 20px;
     padding: 0;
@@ -140,10 +145,11 @@ p {
 }
 
 .contact-me {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    flex-direction: row;
+    width: 1500px;
     margin-bottom: 20px;
-    padding: 50px;
+    padding: 0;
     height: 300px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #92A8D1;
@@ -159,7 +165,7 @@ p {
 }
 
 .about-me img {
-    width: 10%;
+    width: 20%;
     height: 10%;
    height: auto;
     max-height: 200px;
@@ -184,16 +190,16 @@ p {
 }  */
 
 
-.my-work .image1 {
-    max-width: 80%;
-    max-height: 40%;
+.my-work img {
+    float: left;
+   width: 360px;
+   /* object-fit:contain; */
     margin-bottom: 20px;
-    height: auto;
-    position: relative;
+    height: 50%;
+   position: relative;
     top: 5px;
     left: 0;
-    border: 1px black solid;
-    display: block;
+    border: 5px 5px black solid;
 }
 
 
