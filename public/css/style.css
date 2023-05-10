@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #5e17eb;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header h1 .port {
+    color: #4caf50;
+  }
+  
+  /* Logo styles */
+  header img.logo {
+    max-height: 60px;
+    margin-left: 20px;
+  }
+
+  /* Navbar styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 1rem;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #77084c;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #5271ff;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    
+    background-image: linear-gradient(45deg, #fff7ad, #ffa9f9);
+  }
+  
+  nav ul li a.active {
+    background-color: #5271ff;
+  }
+  
+  /* Description styles */
+  .description {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+  
+  .description h2 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Carousel styles */
+  .carousel-container {
+    position: relative;
+  }
+  
+  .carousel-slide {
+    display: none;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-prev {
+    left: 10px;
+  }
+  
+  .carousel-next {
+    right: 10px;
+  }
+  
+  .carousel-prev:hover,
+  .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+.about-me, .my-work, .contact-me {
+    background-color: #92A8D1;
+    color: white;
+    padding: 50px;
+    margin-bottom: 36px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5); /* Changed to use rgba for smoother shadow */
+}
+
+.about-me h2, .my-work h2, .contact-me h2 {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.about-me img {
+    width: 20%;
+    max-height: 200px;
+    height: auto;
+}
+
+/* Styling for my-work.html */
+
+.project {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project h3 {
+    margin: 10px 0;
+}
+
+.project p {
+    margin: 10px 0;
+}
+
+.project a {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.project a:hover {
+    background-color: #0056b3;
+}
+/* Styling for my-work.html */
+
+.contact-me a {
+    display: block;
+    font-size: 30px;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    margin-bottom: 10px; /* Added margin for better spacing */
+}
+
+/*Adjusted screen size for laptop users*/
+ @media only screen and (min-width: 1200px) {
+    .header h1 {
+       font-size: 68px;
+       overflow: wrap;
+       text-align: right;
+    }
+    .header nav {
+        font-size: 30px;
+    }
+    .header nav ul {
+        float: center;
+    }
+    .header nav ul li {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+/*Adjusted screen size for tablet users*/
+@media only screen and (min-width: 768px) {
+    .header h1 {
+        font-size: 56px;
+        overflow: wrap;
+
+    }
+    .header nav {
+        font-size: 25px;
+        overflow: hidden;
+        top: 1;
+        right: 0;
+        width: 100%;
+    }
+    .header nav ul {
+         display: block;
+        position: relative;
+        float: right; 
+    }
+    .header nav ul li {
+
+        float: right;
+        text-align: center;
+    
+    }
+    .tops{
+        overflow: wrap;
+    }
+    .about-me {
+        overflow: nowrap;
+    }
+    .about-me h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .about-me img {
+       overflow: nowrap;
+    }
+    .my-work{
+        overflow: nowrap;
+    }
+    h2 {
+       overflow: nowrap;
+        font-size: 20px;
+    }
+    h3 {
+        overflow:nowrap;
+    }
+    .image1,
+    .image2 {
+        overflow: wrap;
+         width: 75%;
+        height: 25%;
+       
+     }
+     .contact-me h2{
+        font-size: 30px;
+        text-align: center;
+     }
+     .contact-me a {
+        font-size: 25px;
+        overflow: nowrap;
+     }
+}
+/*Adjusted screen size for smartphone users*/
+@media only screen and (max-width: 600px) {
+    .header h1 {
+       font-size: 44px;
+       overflow: wrap;
+    }
+    .header nav {
+        font-size: 10px;
+        overflow: hidden;
+        top: 1;
+        right: 0;
+        width: 100%;
+    }
+    .header nav ul {
+        display: inline-flex;
+        flex-direction: row;
+    }
+    .header nav ul li {
+        overflow: nowrap;
+    }
+    .tops{
+        overflow: wrap;
+    }
+    .about-me {
+        overflow: nowrap;
+    }
+    .about-me h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .about-me img {
+        overflow: nowrap;
+    }
+    .my-work {
+        overflow: nowrap;
+    }
+    .my-work h2 {
+        font-size: 20px;
+        text-align: bottom;
+    }
+    h2 {
+        overflow: nowrap;
+        font-size: 10px;
+     }
+    h3 {
+        overflow:nowrap;
+    }
+    .image1,
+    .image2 {
+        overflow: wrap;
+        width: 60%;
+        height: 20%;
+    }
+    .contact-me h2{
+        font-size: 20px;
+        text-align: center;
+     }
+     .contact-me a {
+        font-size: 20px;
+        overflow: nowrap;
+     }
+} 

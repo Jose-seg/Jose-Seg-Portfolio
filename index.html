@@ -2,63 +2,57 @@
 <html lang="en-US">
    <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jose Segura's portfolio showcasing his work and achievements in web development">
     <title>Jose's Odyssey</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./public/css/reset.css">
+    <link rel="stylesheet" href="./public/css/style.css">
    </head>
 
    <body>
-     <header class="header">
-        <h1>Jose<bold class="port"> S</bold>egura's Journey</h1>
-        <a href="https://github.com/Jose-seg?tab=repositories">
-      </a>
-        <nav>
-           <ul>
-             <li>
-               <a href="#about-me">About me</a>
-             </li>
-             <li>
-               <a href="#my-work">My Work</a>
-             </li>
-             <li>
-               <a href="#contact-me">Contact me</a>
-             </li>
-           </ul>
+    <header>
+         <h1></h1>
+         <div class="logo"> <!-- Wrap the video tag in a div with the logo class -->
+          <video autoplay muted>
+            <source src="./public/assetss/images/Two Fish Inc.mp4" type="video/mp4">
+          </video>
+        </div>
+       <nav>
+          <ul>
+            <li>
+              <a href="./pages/about.html">About me</a>
+            </li>
+            <li>
+              <a href="./pages/my-work.html">My Work</a>
+            </li>
+            <li>
+              <a href="./pages/contact-me.html">Contact me</a>
+            </li>
+          </ul>
         </nav>
-    </header>
-    <!--image under header-->
-    <section class="tops">
-      <img src="images/look-view.jpg" alt="Picture of me in nav section">
-    </section>
-     <main> 
-          <br>
-        <article class="material">
-          <!--sections about me, my work, and contact me-->
-          <nav id="about-me" class="about-me">
-            <img src="images/photo-of-me.jpg" alt="An image asset of myself for the about me section" class="float-left"/>
-            <h2>About me</h2>
-          <p>My name is Jose Segura and I made this webpage to show my future employers all the credible work I've done
-            throughout my bootcamp, as well as my professional career. Although not much is on here as of right now I do plan on adding more work and styling as I progress through the bootcamp.
-          </p>
-          </nav>
-          
-        <nav id="my-work" class="my-work">
-          <h2>My Work and Achievements</h2>
-          <h3>Horiseon Refactor</h3>
-          <a href="https://jose-seg.github.io/01-homework/">
-           <img  src="images/Screen-shot1.jpg" title="Horiseon Website (Refactor)" alt="Image asset for partial screenshot from previous work" class="float-right"> 
-          </a>
-          </nav>
-          
-        <nav id="contact-me" class="contact-me">
-             <h2>Contact me</h2>
-             <a href="josesegura535@gmail.com">Email: josesegura535@gmail.com</a>
-             <a href="https://github.com/Jose-seg"> Github: https://github.com/Jose-seg</a>
-        </nav>
+   </header>
+   <main> 
+       <section class="description">
+         <p>Welcome to my portfolio! My name is Jose Segura and I am a web developer. Explore my site to learn more about me and my work.</p>
+       </section>
 
-        </article>
-      
-   </body>
-
+       <section class="carousel">
+         <div class="carousel-slide">
+           <img src="./public/assets/images/slide1.jpg" alt="Slide 1">
+         </div>
+         <div class="carousel-slide">
+           <img src="./public/assets/images/slide2.jpg" alt="Slide 2">
+         </div>
+         <div class="carousel-slide">
+           <img src="./public/assets/images/slide3.jpg" alt="Slide 3">
+         </div>
+         <button class="carousel-prev">&#10094;</button>
+         <button class="carousel-next">&#10095;</button>
+       </section>
+   </main>
+   <footer>
+     <!-- You can add a footer content here, like copyright notice or links to social media profiles. -->
+   </footer>
+  <script src="./public/js/carousel.js"></script>
+</body>
 </html>
