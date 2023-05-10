@@ -13,6 +13,10 @@ The purpose of this site is to store my previous and future work during the cour
 N/A
 
 ## Screenshot
+![image](https://user-images.githubusercontent.com/122575280/217148000-903babe1-4ff9-4c26-9b20-e545457e5fd3.png)
+![image](https://user-images.githubusercontent.com/122575280/217148242-60b7d432-26c1-4def-b2fa-e68f6f5b3d41.png)
+
+
 
 ## Deployment
 * github Repo: https://github.com/Jose-seg/Jose-Seg-Portfolio
