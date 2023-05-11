@@ -1,0 +1,23 @@
+{
+  "name": "jose-seg-portfolio",
+  "version": "1.0.0",
+  "description": "## Description * This assignment was an excersise to challenge our skills when it comes to creating a webpage out of scratch, however the difficulties, I eas able to learn new things in order to help me finish this assignment. I intend in using this website to store my previous assignments as well as any projects we work on in the future. At the moment I don't have much to work with but with more knowledge and accomplishments I can fill and stylize this webpage to my heart's content.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jose-seg/Jose-Seg-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jose-seg/Jose-Seg-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Jose-seg/Jose-Seg-Portfolio#readme",
+  "dependencies": {
+    "bulma": "^0.9.4"
+  }
+}
