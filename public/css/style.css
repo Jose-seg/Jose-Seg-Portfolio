@@ -106,7 +106,7 @@ body {
 }
 
 .btn {
-  background-color: #333;
+  background-color: #5e17eb;
   color: #fff;
   text-decoration: none;
   padding: 0.5rem 1.5rem;
@@ -114,7 +114,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #555;
+  background-color: #ff66c4;
 }
 
 /* About Section Styles */
@@ -133,6 +133,84 @@ footer {
   padding: 1.5rem;
   background-color: #f4f4f4;
   text-align: center;
+}
+
+/* My Work Styles */
+.my-work {
+  padding: 3rem 0;
+  background-color: #5e17eb;
+  text-align: center;
+}
+
+.my-work h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}
+
+nav a {
+  color: #d31212;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  color: #ff66c4;
+}
+
+.project {
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem;
+  width: calc(33% - 2rem);
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  color: #5e17eb;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.project a {
+  background-color: #ff66c4;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.project a:hover {
+  background-color: #ff3399;
 }
 
 /*Adjusted screen size for laptop users*/
