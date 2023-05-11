@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html lang="en-US">
-   <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jose Segura's portfolio showcasing his work and achievements in web development">
     <title>Jose's Odyssey</title>
     <link rel="stylesheet" href="./public/css/reset.css">
     <link rel="stylesheet" href="./public/css/style.css">
-   </head>
-
-   <body>
-    <header>
-         <h1></h1>
-         <div class="logo"> <!-- Wrap the video tag in a div with the logo class -->
-          <video autoplay muted>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+        <ul class="navbar-end">
+            <li><a href="./pages/about.html">About me</a></li>
+            <li><a href="./pages/my-work.html">My Work</a></li>
+            <li><a href="./pages/contact-me.html">Contact me</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+      <div class="logo-container">
+      <div class="logo">
+        <video autoplay muted>
             <source src="./public/assetss/images/Two Fish Inc.mp4" type="video/mp4">
-          </video>
-        </div>
-       <nav>
-          <ul>
-            <li>
-              <a href="./pages/about.html">About me</a>
-            </li>
-            <li>
-              <a href="./pages/my-work.html">My Work</a>
-            </li>
-            <li>
-              <a href="./pages/contact-me.html">Contact me</a>
-            </li>
-          </ul>
-        </nav>
-   </header>
-   <main> 
-       <section class="description">
-         <p>Welcome to my portfolio! My name is Jose Segura and I am a web developer. Explore my site to learn more about me and my work.</p>
-       </section>
-
-       <section class="carousel">
-         <div class="carousel-slide">
-           <img src="./public/assetss/images/look-view.jpg" alt="Slide 1">
-         </div>
-         <div class="carousel-slide">
-           <img src="./public/assetss/images/nice-view.jpg" alt="Slide 2">
-         </div>
-         <div class="carousel-slide">
-           <img src="./public/assetss/images/image-asset2.jpg" alt="Slide 3">
-         </div>
-         <button class="carousel-prev">&#10094;</button>
-         <button class="carousel-next">&#10095;</button>
-       </section>
-   </main>
-   <footer>
-     <!-- You can add a footer content here, like copyright notice or links to social media profiles. -->
-   </footer>
-  <script src="./public/js/carousel.js"></script>
+        </video>
+    </div>
+  </div>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="title">Welcome to My Portfolio</h1>
+                <p class="subtitle">Discover my work and learn more about me</p>
+                <a href="./pages/my-work.html" class="btn">View My Work</a>
+            </div>
+        </section>
+        <section class="about-section">
+            <div class="container">
+                <h2 class="title">About Me</h2>
+                <p>I am a web developer based in [Location]. I specialize in creating modern and responsive websites using HTML, CSS, and JavaScript. In my free time, I enjoy playing video games and spending time with my family.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- You can add a footer content here, like copyright notice or links to social media profiles. -->
+        <footer class="footer">
+          <div class="content has-text-centered">
+            <p>
+              <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+              <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+              is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+            </p>
+          </div>
+        </footer>
+    </footer>
+    <script src="./public/js/carousel.js"></script>
 </body>
 </html>
